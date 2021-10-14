@@ -55,16 +55,19 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
 
     }
 
+    //creating dummy data list for the recyclerview
     private void buildRecyclerViewData() {
         for (int i=0; i<10; i++){
             contactList.add(new Contact("123456789"+i,"Abhishek"+(i+1)));
         }
     }
 
+    //initializing views
     private void initViews() {
         recyclerView = findViewById(R.id.recyclerView);
         mTvNoContacts = findViewById(R.id.tvNoContacts);
     }
+
 
     @Override
     public void onItemClicked(int position, Contact contact) {
