@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
         }
     }
 
+
+    //adapter and layout manager is attached to the recyclerview
     private void setRecyclerViewAdapter() {
         ContactAdapter contactAdapter = new ContactAdapter(contactList, this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -69,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     }
 
 
+    // interface method receives the data from the view holder and performs the action
     @Override
     public void onItemClicked(int position, Contact contact) {
         String uri = "tel:" + contact.getNumber() ;
