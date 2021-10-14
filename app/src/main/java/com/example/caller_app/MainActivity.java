@@ -34,10 +34,13 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
                 new String[]{Manifest.permission.READ_CONTACTS, Manifest.permission.CALL_PHONE}, REQ_CODE);
     }
 
+
+    // checking the results of the permission request and calling the methods accordingly
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
+        //if permission is granted the show the list else hide it
         if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
             recyclerView.setVisibility(View.VISIBLE);
             mTvNoContacts.setVisibility(View.GONE);
