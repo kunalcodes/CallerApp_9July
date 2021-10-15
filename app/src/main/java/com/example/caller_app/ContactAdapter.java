@@ -14,9 +14,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactViewHolder> {
     private ArrayList<Contact> contactList;
     private ItemClickListener itemClickListener;
 
-    /* adapter is created from this constructor and list is passed from the activity
-    which is initialized here
-     */
+
     public ContactAdapter(ArrayList<Contact> contactArrayList, ItemClickListener itemClickListener){
         this.itemClickListener = itemClickListener;
         this.contactList = contactArrayList;
