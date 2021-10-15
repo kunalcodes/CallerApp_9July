@@ -31,13 +31,14 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactViewHolder> {
         return new ContactViewHolder(view, itemClickListener);
     }
 
+    //here data from the list is bound to the created views
     @Override
     public void onBindViewHolder(@NonNull ContactViewHolder holder, int position) {
         Contact contact = contactList.get(position);
         holder.setData(contact);
     }
 
-
+    //returns the list size so recyclerview knows the size
     @Override
     public int getItemCount() {
         return contactList.size();
