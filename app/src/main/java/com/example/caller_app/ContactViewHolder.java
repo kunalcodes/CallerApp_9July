@@ -27,7 +27,7 @@ public class ContactViewHolder extends RecyclerView.ViewHolder {
         mTvNumber = itemView.findViewById(R.id.tvNumber);
     }
 
-
+    // the data is bound to the views in the item layout
     public void setData(Contact contact) {
         mTvName.setText(contact.getName());
         mTvNumber.setText(contact.getNumber());
