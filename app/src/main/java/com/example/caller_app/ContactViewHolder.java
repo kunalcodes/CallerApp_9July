@@ -14,6 +14,7 @@ public class ContactViewHolder extends RecyclerView.ViewHolder {
     private CardView mCvCardView;
     private ItemClickListener itemClickListener;
 
+    // using this constructor, interface is passed from adapter to view holder and initialized here
     public ContactViewHolder(@NonNull View itemView, ItemClickListener itemClickListener) {
         super(itemView);
         this.itemClickListener = itemClickListener;
@@ -25,6 +26,7 @@ public class ContactViewHolder extends RecyclerView.ViewHolder {
         mTvName = itemView.findViewById(R.id.tvName);
         mTvNumber = itemView.findViewById(R.id.tvNumber);
     }
+
 
     public void setData(Contact contact) {
         mTvName.setText(contact.getName());
