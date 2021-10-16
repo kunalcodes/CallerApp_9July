@@ -2,14 +2,16 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cvCardView"
+    app:cardCornerRadius="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:elevation="5dp"
     android:layout_margin="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#5F5FAF">
+        android:background="#9090C6">
 
         <ImageView
             android:id="@+id/ivImage"
