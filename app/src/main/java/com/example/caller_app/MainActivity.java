@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
     }
 
 
-
+    // checking the results of the permission request and calling the methods accordingly
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
