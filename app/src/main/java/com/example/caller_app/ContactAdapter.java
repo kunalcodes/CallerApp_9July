@@ -22,7 +22,6 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactViewHolder> {
         this.contactList = contactArrayList;
     }
 
-
     //this method inflates the layout for individual item
     @NonNull
     @Override
