@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements ItemClickListener
                 new String[]{Manifest.permission.READ_CONTACTS, Manifest.permission.CALL_PHONE}, REQ_CODE);
     }
 
-    // checking the results of the permission request and calling the methods accordingly
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
